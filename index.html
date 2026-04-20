@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="media/Moreine_Logo-Photoroom.png" types="image/png" />
+    <title>Moraine Lake</title>
+</head>
+
+<body>
+    <!--Hlavičká stránky-->
+    <div class = "uvod">
+    <header>
+        <div class="navbar">
+            <img src="media/logo1.png" alt="logo webů" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#onas">O nás</a></li>
+                    <li><a href="#historie">Historie</a></li>
+                    <li><a href="#galerie">Galerie</a></li>
+                    <li><a href="#mapa"> Kde nás najdete?</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--Obsah stránky-->
+    <main>
+        <!--Sekce č.1-->
+        <section id="uvod">
+            <video autoplay loop muted class="video">
+                <source src="media/Moraine_Video.mp4" type="video/mp4">
+            </video>
+            <div class="hero">
+                <h2>Moraine Lake</h2>
+                <a href="#onas" class="tlacitko">Explore the Moraine Lake</a>
+            </div>
+        </section>
+    </div>
+
+        <!--Sekce č.2-->
+        <section id="onas" class="onas">
+            <div class="sekce2">
+                <h1>O JEZEŘE</h1>
+                <div class="obsah">
+                    <p class="text">Tyrkysové ledovcové jezero v kanadských Skalnatých horách.
+                        Moraine Lake se nachází v národním parku Banff National Park v provincii Alberta v Canada.
+                        Jezero je známé především svou výraznou tyrkysovou barvou vody a dramatickou horskou krajinou.
+                        Díky své jedinečné scenérii patří mezi nejfotografovanější přírodní lokality v Kanadě.
+                        Moraine Lake je ledovcové jezero nacházející se v nadmořské výšce přibližně 1885 metrů nad mořem
+                        v kanadských Skalnatých horách.
+                        Leží v údolí známém jako Valley of the Ten Peaks, které je obklopeno deseti výraznými horskými
+                        vrcholy.
+                        Jezero vzniklo díky činnosti ledovců během poslední doby ledové.
+                        Postupující ledovec zde vytvořil přirozenou hráz z kamenů a sedimentů, která zadržela vodu z
+                        tajících ledovců a vytvořila dnešní jezero.
+                        Díky kombinaci čisté vody, horské krajiny a jedinečné barvy patří Moraine Lake mezi
+                        nejfotografovanější přírodní místa v Kanadě.</p>
+
+                    <img src="media/sekce2.jpg" alt="uvodni obrazek Maraine Lake" width="55%" id="obrazek">
+                </div>
+            </div>
+
+        </section>
+
+        <!--Sekce č.3-->
+        <section id="historie" class="historie">
+            <div class="sekce3">
+                <h1>VZNIK JEZERA</h1>
+                <div class="obsah">
+                    <p class="text">Moraine Lake vzniklo na konci poslední doby ledové přibližně před 12 000 lety. V té
+                        době byla oblast dnešního údolí Valley of the Ten Peaks pokrytá velkým ledovcem.
+                        Když se klima začalo oteplovat, ledovec postupně ustupoval a při svém pohybu přesouval velké
+                        množství kamenů, štěrku a dalších hornin.
+                        Tyto usazeniny vytvořily přirozenou hráz zvanou moréna.
+                        Za touto morénou se postupně začala hromadit voda z tajícího ledu a z horských potoků, čímž
+                        vzniklo jezero Moraine Lake.
+                        Typická tyrkysová barva jezera je způsobena velmi jemnými částicemi horniny, které do vody
+                        přinášejí ledovce z okolních hor a které odrážejí sluneční světlo.</p>
+
+                    <img src="media/sekce3.jpg" alt="historický obrazek" width="55%" id="obrazek">
+                </div>
+            </div>
+
+        </section>
+
+        <!--Sekce č.4-->
+        <section id="galerie" class="galerie">
+            <div class="sekce4">
+                <h1>GALERIE</h1>
+                <div class="galerie-obrazky">                
+                    <img src="media/galerie1.jpg" alt="Jezero pod polárním zařením " class="obrazky">
+                    <img src="media/galerie2.jpg" alt="Jezero v zimě" class="obrazky">
+                    <img src="media/galerie3.jpg" alt="Jezero v krasném počásí" class="obrazky">
+                    <img src="media/galerie4.jpg" alt="Jezero ve slunečním počásí" class="obrazky">
+
+                </div>
+            </div>
+
+
+        </section>
+        <!--Sekce č.5-->
+        <section id="mapa" class="mapa">
+            <h1>Kde nás najdete?</h1>
+            <div id="map">
+
+                <script>
+                    var map = L.map('map').setView([51.3217, -116.1860], 13);
+
+                    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                    }).addTo(map);
+
+                    L.marker([51.3217, -116.1860])
+                        .addTo(map)
+                        .bindPopup('<b>Moraine Lake</b><br>Valley of the Ten Peaks, Alberta, Canada')
+                        .openPopup();
+                </script>
+            </div>
+        </section>
+
+        <!--Sekce č.6-->
+        <section id="kontakt" class="kontakt">
+            <h1>Kontakt</h1>
+            <div class="pole">
+                <form action="#" method="post">
+
+                    <label for="jmeno">Jméno</label></br>
+                    <input type="text" id="jmeno" name="jmeno" required></br>
+
+                    <label for="prijmeni">Příjmení</label></br>
+                    <input type="text" id="prijmeni" name="prijmeni" required></br>
+
+                    <label for="email">Email</label></br>
+                    <input type="email" id="email" name="email" required></br>
+
+                    <label for="zprava">Zpráva</label></br>
+                    <textarea id="zprava" name="zprava" rows="5" required></textarea></br>
+
+                    <button type="submit">Odeslat</button>
+                    <button type="reset">Smázát</button>
+
+                </form>
+            </div>
+            <div id="tlacitko">
+                <a href="#uvod" class="tlacitko-nahoru" id="tlacitka">Nahorů⇧</a>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!--Patička stránky-->
+    <footer>
+        &copy;Artem Bratychak - zdrojem informácí je společnost OpenAI
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
