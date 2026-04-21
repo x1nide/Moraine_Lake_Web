@@ -151,7 +151,7 @@ nav a:hover{
 
 .hero h2{
     font-size: 95px;
-    color: #a7acee;
+    color: #68d9e8;
     margin-bottom: 20px;
     font-family: Playfair;
     text-shadow: 0 2px 20px rg;
@@ -161,8 +161,8 @@ nav a:hover{
     text-decoration: none;
     padding: 12px 28px;
     font-size: 1.3rem;
-    color: #a7acee;
-    border: 2px solid #a7acee;
+    color: #68d9e8;
+    border: 2px solid #40E0D0;
     border-radius: 115px;
     transition: 0.3s;
     font-family: Roboto;
