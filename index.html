@@ -15,152 +15,276 @@
 
 <body>
     <!--Hlavičká stránky-->
-    <div class = "uvod">
-    <header>
-        <div class="navbar">
-            <img src="media/logo1.png" alt="logo webů" class="logo">
-            <nav>
-                <ul>
-                    <li><a href="#onas">O nás</a></li>
-                    <li><a href="#historie">Historie</a></li>
-                    <li><a href="#galerie">Galerie</a></li>
-                    <li><a href="#mapa"> Kde nás najdete?</a></li>
-                    <li><a href="#kontakt">Kontakt</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <!--Obsah stránky-->
-    <main>
-        <!--Sekce č.1-->
-        <section id="uvod">
-            <video autoplay loop muted class="video">
-                <source src="media/Moraine_Video.mp4" type="video/mp4">
-            </video>
-            <div class="hero">
-                <h2>Moraine Lake</h2>
-                <a href="#onas" class="tlacitko">Explore the Moraine Lake</a>
+    <div id="uvod">
+        <header id="hlavicka">
+            <div class="navbar">
+                <img src="media/logo1.png" alt="logo webů" class="logo">
+                 <input type="checkbox" id="nav-toggle" aria-label="Otevřít menu">
+                <label for="nav-toggle" class="hamburger" aria-hidden="true">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <nav>
+                    <ul>
+                        <li><a href="#onas">O nás</a></li>
+                        <li><a href="#historie">Historie</a></li>
+                        <li><a href="#galerie">Galerie</a></li>
+                        <li><a href="#mapa"> Kde nás najdete?</a></li>
+                        <li><a href="#kontakt">Kontakt</a></li>
+                    </ul>
+                </nav>
             </div>
-        </section>
+        </header>
+
+        <!--Obsah stránky-->
+        <main>
+            <!--Sekce č.1-->
+            <section class="uvod-section">
+                <video autoplay loop muted class="video">
+                    <source src="media/Moraine_Video.mp4" type="video/mp4">
+                </video>
+                <div class="hero">
+                    <h2>Moraine Lake</h2>
+                    <a href="#onas" class="tlacitko">Explore the Moraine Lake</a>
+                </div>
+            </section>
     </div>
 
-        <!--Sekce č.2-->
-        <section id="onas" class="onas">
-            <div class="sekce2">
-                <h1>O JEZEŘE</h1>
-                <div class="obsah">
-                    <p class="text">Tyrkysové ledovcové jezero v kanadských Skalnatých horách.
-                        Moraine Lake se nachází v národním parku Banff National Park v provincii Alberta v Canada.
-                        Jezero je známé především svou výraznou tyrkysovou barvou vody a dramatickou horskou krajinou.
-                        Díky své jedinečné scenérii patří mezi nejfotografovanější přírodní lokality v Kanadě.
-                        Moraine Lake je ledovcové jezero nacházející se v nadmořské výšce přibližně 1885 metrů nad mořem
-                        v kanadských Skalnatých horách.
-                        Leží v údolí známém jako Valley of the Ten Peaks, které je obklopeno deseti výraznými horskými
-                        vrcholy.
-                        Jezero vzniklo díky činnosti ledovců během poslední doby ledové.
-                        Postupující ledovec zde vytvořil přirozenou hráz z kamenů a sedimentů, která zadržela vodu z
-                        tajících ledovců a vytvořila dnešní jezero.
-                        Díky kombinaci čisté vody, horské krajiny a jedinečné barvy patří Moraine Lake mezi
-                        nejfotografovanější přírodní místa v Kanadě.</p>
+    <!--Sekce č.2 - O jezeře-->
+    <section id="onas" class="onas">
+        <div class="sekce2">
+            <h1>O JEZEŘE</h1>
 
-                    <img src="media/sekce2.jpg" alt="uvodni obrazek Maraine Lake" width="55%" id="obrazek">
+            <div class="alternating-row">
+                <p class="text">Moraine Lake se nachází v srdci národního parku Banff v provincii Alberta a právem patří
+                    mezi nejfotografovanější přírodní lokality na světě. Toto ledovcové jezero leží v nadmořské výšce 1
+                    885 metrů v majestátním údolí Valley of the Ten Peaks (Údolí deseti vrcholů). Právě tato poloha,
+                    obklopená deseti ostrými skalnatými štíty, mu dodává jeho nezaměnitelný dramatický ráz. Panorama s
+                    těmito vrcholy bylo v minulosti dokonce vyobrazeno na kanadské dvacetidolarové bankovce, díky čemuž
+                    se mu přezdívá „Twenty Dollar View".
+                    Z geologického hlediska je jezero výsledkem činnosti ledovců z poslední doby ledové. Své jméno
+                    získalo podle morény, což je kamenný val a nános sedimentů, který zde ustupující ledovec zanechal a
+                    vytvořil tak přirozenou hráz. Nejpozoruhodnějším rysem jezera je jeho zářivě tyrkysová barva. Tento
+                    jev nezpůsobují řasy, ale tzv. ledovcové mléko (rock flour). Jde o velmi jemné částice horniny
+                    vznikající třením ledovců o skalní podloží, které se splavují do jezera a zůstávají rozptýleny ve
+                    vodě. Když na ně dopadá sluneční světlo, tyto částice pohlcují barvy a odrážejí pouze modrozelené
+                    spektrum, což vytváří onen ikonický neonový efekt, který vrcholí v letních měsících při nejvyšším
+                    tání ledovců.
+                </p>
+                <img src="media/sekce2.jpg" alt="uvodni obrazek Maraine Lake" class="alternating-img">
+            </div>
+
+            <div class="alternating-row reverse">
+                <img src="media/uvod1.jpg" alt="uvodni obrazek2" class="alternating-img">
+                <p class="text">
+                    Okolí jezera je tvořeno fascinující mozaikou ekosystémů, od hlubokých horských lesů až po
+                    barevné
+                    alpínské louky. Tato divočina poskytuje útočiště vzácným druhům zvířat. Nezpochybnitelným králem
+                    oblasti je medvěd grizzly, který se v údolí pase na bobulích a koříncích; kvůli jeho ochraně
+                    musí
+                    turisté na stezky často vstupovat v doprovodu alespoň tří dalších lidí. Na lesních mýtinách se
+                    pasou
+                    majestátní jeleni wapiti, jejichž troubení se na podzim rozléhá údolím. Nad hranicí lesa, na
+                    strmých
+                    skalnatých srázech, můžete spatřit neuvěřitelně obratné horské kozy s hustou bílou srstí. U
+                    kamenného valu přímo u břehu pak na turisty často vykukují svišti, kteří při sebemenším náznaku
+                    nebezpečí vydávají pronikavé varovné hvízdání.
+                    V současnosti je Moraine Lake symbolem nejen krásy, ale i přísné ochrany přírody. Kvůli extrémní
+                    popularitě byl v roce 2023 zakázán příjezd soukromým autům, aby se snížil hluk a emise.
+                    Návštěvníci
+                    tak k jezeru přijíždějí hromadnou dopravou, což zajišťuje, že si toto unikátní místo zachová
+                    svou
+                    divokou atmosféru i pro budoucí generace.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--Sekce č.3 - Historie-->
+    <section id="historie" class="historie">
+        <div class="sekce3">
+            <h1>VZNIK JEZERA</h1>
+
+            <div class="alternating-row">
+                <p class="text">Moraine Lake, ležící v srdci národního parku Banff v provincii Alberta, patří k
+                    nejuznávanějším přírodním divům světa. Toto ledovcové jezero se nachází v nadmořské výšce 1 885
+                    metrů v majestátním údolí Valley of the Ten Peaks (Údolí deseti vrcholů). Právě dramatický prstenec
+                    deseti ostrých štítů mu dodává nezaměnitelný ráz, který byl v letech 1969 a 1979 vyobrazen na
+                    kanadské dvacetidolarové bankovce, čímž vzniklo slavné označení „Twenty Dollar View".
+                    Ačkoliv pro západní svět jezero zdokumentovali průzkumníci až na konci 19. století, oblast byla po
+                    tisíciletí domovem a lovištěm původních obyvatel Severní Ameriky. Ti krajinu využívali k pohybu v
+                    náročném horském terénu dávno před příchodem Evropanů. Pro moderní historii jezero „objevil" v roce
+                    1899 americký průzkumník Walter Wilcox, který byl natolik fascinován okolní scenérií, že pojmenoval
+                    celé údolí podle deseti dominantních vrcholů. Právě Wilcox dal jezeru název „Moraine", podle
+                    geologického nánosu kamenů a sedimentů (morény), které zde zanechal ustupující ledovec a které
+                    vytvořily přirozenou hráz jezera.</p>
+                <img src="media/historie-1.jpg" alt="historický obrazek" class="alternating-img">
+            </div>
+
+            <div class="alternating-row reverse">
+                <img src="media/historie-2.jpg" alt="historický obrazek" class="alternating-img">
+                <p class="text">
+                    Z přírodního hlediska je nejvíce fascinující zářivě tyrkysová barva vody. Tento jev vzniká díky tzv.
+                    ledovcovému mléku (rock flour) – velmi jemným částicím horniny, které ledovce při svém pohybu
+                    obrušují ze skal. Tyto částice se s tající vodou dostávají do jezera a zůstávají rozptýleny v celém
+                    vodním sloupci. Při dopadu slunečního světla pak dochází k lomu, kdy se odráží pouze modrozelená
+                    část barevného spektra, což vytváří onen pověstný „neonový" efekt, nejintenzivnější v letních
+                    měsících.
+                    Kolem jezera se rozkládají hluboké lesy a barevné alpínské louky, které jsou domovem divoké zvěře.
+                    Vládne zde medvěd grizzly, který se v údolí pase na plodech, zatímco na loukách lze zaslechnout
+                    troubení jelenů wapiti. Strmé skalní srázy jsou domovem horských koz a v kamenných polích u břehu
+                    často narazíte na hvízdající sviště. Od založení národního parku Banff v roce 1885 se tato oblast
+                    stala magnetem pro turisty. Aby byla tato křehká rovnováha mezi historií, přírodou a masivním
+                    turismem zachována, je od roku 2023 k jezeru zakázán vjezd soukromým autům, čímž se Moraine Lake
+                    vrací ke svému klidnějšímu a ekologičtějšímu charakteru.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--Sekce č.4-->
+    <section id="galerie" class="galerie">
+        <div class="sekce4">
+            <h1>GALERIE</h1>
+            <div class="galerie-track-wrapper">
+                <div class="galerie-track">
+                    <img src="media/galerie1.jpg" alt="Jezero pod polárním zařením" class="galerie-item">
+                    <img src="media/galerie2.jpg" alt="Jezero v zimě" class="galerie-item">
+                    <img src="media/galerie3.jpg" alt="Jezero v krasném počásí" class="galerie-item">
+                    <img src="media/galerie4.jpg" alt="Jezero ve slunečním počásí" class="galerie-item">
+                    <img src="media/galerie5.jpg" alt="Jezero a lidi u toho" class="galerie-item">
+                    <img src="media/galerie6.jpg" alt="Jezero cool obrazek" class="galerie-item">
+                    <img src="media/galerie7.jpg" alt="Jezero a lidi na konoe" class="galerie-item">
+                    <img src="media/galerie8.jpg" alt="Jezero a kanoe bez lidi" class="galerie-item">
                 </div>
             </div>
+        </div>
 
-        </section>
+        <!--Sekce č.5 - Příroda jezera-->
+        <section class="priroda-sekce">
+            <div class="priroda-obsah">
+                <!-- Levá strana: text -->
+                <div class="priroda-text">
+                    <h1>Příroda jezera</h1>
+                    <p>Při návštěvě Moraine Lake se ocitnete v srdci kanadských Rockies.
+                        Okolí jezera nabízí zážitek pro každého milovníka přírody – ať už jde o procházku hustým jehličnatým
+                        lesem, nebo náročný výstup na okolní hřebeny.
+                        Oblíbené stezky, jako je například ta do Larch Valley, vás provedou voňavými lesy až na alpinské
+                        louky, odkud se otevírají úchvatné výhledy na skalnaté štíty.
+                        Na podzim se navíc zdejší modřínové lesy barví do zlata, což v kombinaci s ledovcovým jezerem a
+                        zasněženými vrcholky hor vytváří jednu z nejkrásnějších scenérií v Kanadě.
+                    </p>
+                </div>
 
-        <!--Sekce č.3-->
-        <section id="historie" class="historie">
-            <div class="sekce3">
-                <h1>VZNIK JEZERA</h1>
-                <div class="obsah">
-                    <p class="text">Moraine Lake vzniklo na konci poslední doby ledové přibližně před 12 000 lety. V té
-                        době byla oblast dnešního údolí Valley of the Ten Peaks pokrytá velkým ledovcem.
-                        Když se klima začalo oteplovat, ledovec postupně ustupoval a při svém pohybu přesouval velké
-                        množství kamenů, štěrku a dalších hornin.
-                        Tyto usazeniny vytvořily přirozenou hráz zvanou moréna.
-                        Za touto morénou se postupně začala hromadit voda z tajícího ledu a z horských potoků, čímž
-                        vzniklo jezero Moraine Lake.
-                        Typická tyrkysová barva jezera je způsobena velmi jemnými částicemi horniny, které do vody
-                        přinášejí ledovce z okolních hor a které odrážejí sluneční světlo.</p>
+                <!-- Pravá strana: scroll carousel se zvířaty -->
+                <div class="zvirata-carousel-wrapper">
+                    <div class="zvirata-carousel">
+                        <div class="zvirata-card">
+                            <img src="media/grizzly.jpg" alt="Medvět-Grizzly">
+                            <div class="card-info">
+                                <h2>Medvět Grizzly</h2>
+                                <p>Tento mohutný vládce hor se v okolí jezera často pase na lesních plodech a koříncích.
+                                    Kvůli jeho ochraně i bezpečnosti turistů je v některých sezónách vstup na okolní stezky
+                                    povolen pouze ve skupinách.
+                                    Poznáte ho podle typického svalnatého hrbu na zádech.
+                                </p>
+                            </div>
+                        </div>
 
-                    <img src="media/sekce3.jpg" alt="historický obrazek" width="55%" id="obrazek">
+                        <div class="zvirata-card">
+                            <img src="media/koza.jpg" alt="Horska-koza">
+                            <div class="card-info">
+                                <h2>Horská koza</h2>
+                                <p>Tyto bíle zbarvené šplhavce najdete vysoko na strmých skalnatých útesech nad jezerem.
+                                    Díky svým speciálně tvarovaným kopytům se dokážou pohybovat i po těch nejnebezpečnějších
+                                    srázech.
+                                    Z dálky vypadají na šedých skalách jako malé bílé tečky.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="zvirata-card">
+                            <img src="media/wapiti.jpg" alt="Jelen wapiti">
+                            <div class="card-info">
+                                <h2>Jelen wapiti</h2>
+                                <p>Wapiti je majestátní jelen, kterého u jezera často uvidíte na lesních mýtinách nebo u
+                                    břehů.
+                                    Na podzim se údolím rozléhá jejich hlasité troubení, kterým samci vábí své partnerky.
+                                    Jsou symbolem místní fauny, ale je důležité si od nich udržovat bezpečný odstup.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="zvirata-card">
+                            <img src="media/svist.jpg" alt="Svíšť">
+                            <div class="card-info">
+                                <h2>Svíšť</h2>
+                                <p>Tohoto huňatého hlodavce nejčastěji potkáte u kamenného valu „Rockpile" přímo u břehu
+                                    jezera.
+                                    Jsou známí svým pronikavým hvízdáním, kterým varují ostatní před nebezpečím.
+                                    V létě se rádi vyhřívají na balvanech a pozorují procházející turisty.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-
         </section>
+    </section>
 
-        <!--Sekce č.4-->
-        <section id="galerie" class="galerie">
-            <div class="sekce4">
-                <h1>GALERIE</h1>
-                <div class="galerie-obrazky">                
-                    <img src="media/galerie1.jpg" alt="Jezero pod polárním zařením " class="obrazky">
-                    <img src="media/galerie2.jpg" alt="Jezero v zimě" class="obrazky">
-                    <img src="media/galerie3.jpg" alt="Jezero v krasném počásí" class="obrazky">
-                    <img src="media/galerie4.jpg" alt="Jezero ve slunečním počásí" class="obrazky">
+    <!--Sekce č.6 - Mapa-->
+    <section id="mapa" class="mapa">
+        <h1>Kde nás najdete?</h1>
+        <div id="map">
+            <script>
+                var map = L.map('map').setView([51.3217, -116.1860], 13);
 
-                </div>
-            </div>
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                }).addTo(map);
 
+                L.marker([51.3217, -116.1860])
+                    .addTo(map)
+                    .bindPopup('<b>Moraine Lake</b><br>Valley of the Ten Peaks, Alberta, Canada')
+                    .openPopup();
+            </script>
+        </div>
+    </section>
 
-        </section>
-        <!--Sekce č.5-->
-        <section id="mapa" class="mapa">
-            <h1>Kde nás najdete?</h1>
-            <div id="map">
+    <!--Sekce č.7 - Kontakt-->
+    <section id="kontakt" class="kontakt">
+        <h1>Kontakt</h1>
+        <div class="pole">
+            <form action="#" method="post">
 
-                <script>
-                    var map = L.map('map').setView([51.3217, -116.1860], 13);
+                <label for="jmeno">Jméno</label></br>
+                <input type="text" id="jmeno" name="jmeno" required></br>
 
-                    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-                    }).addTo(map);
+                <label for="prijmeni">Příjmení</label></br>
+                <input type="text" id="prijmeni" name="prijmeni" required></br>
 
-                    L.marker([51.3217, -116.1860])
-                        .addTo(map)
-                        .bindPopup('<b>Moraine Lake</b><br>Valley of the Ten Peaks, Alberta, Canada')
-                        .openPopup();
-                </script>
-            </div>
-        </section>
+                <label for="email">Email</label></br>
+                <input type="email" id="email" name="email" required></br>
 
-        <!--Sekce č.6-->
-        <section id="kontakt" class="kontakt">
-            <h1>Kontakt</h1>
-            <div class="pole">
-                <form action="#" method="post">
+                <label for="zprava">Zpráva</label></br>
+                <textarea id="zprava" name="zprava" rows="5" required></textarea></br>
 
-                    <label for="jmeno">Jméno</label></br>
-                    <input type="text" id="jmeno" name="jmeno" required></br>
+                <button type="submit">Odeslat</button>
+                <button type="reset">Smázát</button>
 
-                    <label for="prijmeni">Příjmení</label></br>
-                    <input type="text" id="prijmeni" name="prijmeni" required></br>
-
-                    <label for="email">Email</label></br>
-                    <input type="email" id="email" name="email" required></br>
-
-                    <label for="zprava">Zpráva</label></br>
-                    <textarea id="zprava" name="zprava" rows="5" required></textarea></br>
-
-                    <button type="submit">Odeslat</button>
-                    <button type="reset">Smázát</button>
-
-                </form>
-            </div>
-            <div id="tlacitko">
-                <a href="#uvod" class="tlacitko-nahoru" id="tlacitka">Nahorů⇧</a>
-            </div>
-        </section>
+            </form>
+        </div>
+        <div id="tlacitko">
+            <a href="#uvod" class="tlacitko-nahoru" id="tlacitka">Nahorů⇧</a>
+        </div>
+    </section>
 
     </main>
-
 
     <!--Patička stránky-->
     <footer>
         &copy;Artem Bratychak - zdrojem informácí je společnost OpenAI
-
     </footer>
 
     <script src="script.js"></script>
